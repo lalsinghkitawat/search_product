@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d0eaff;
+}
+.product{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+
+}
+.controlls .active{
+    background-color: #553ff0;
+}
+.gallery{
+    flex-basis: 47%;
+    background-color: #241e20;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px rgb(0,0,0,0.3);
+    position: relative;
+}
+.gallery img{
+    width: 100%;
+    display: block;
+    
+    
+}
+.details{
+    flex-basis: 52%;
+    background-color: #fff;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px rgb(0,0,0,0.3);
+   font-weight: 500px;
+   font-size: 14px;
+}
+.details h1{
+    font-size: 35px;
+    color: #333;
+}
+.details h2{
+    font-size: 30px;
+    color: #555;
+}
+.details h3{
+    font-weight: 700;
+    color:#00d874;
+}
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+.size{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.size p{
+    width: 70px;
+}
+.size input:checked +span{
+    color: blue;
+    font-weight: 700;
+}
+.size input{
+    display: none;
+}
+.size span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.color p{
+    width: 75px;
+}
+.color span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 15px;
+    cursor: pointer;
+    gap: 10px;
+}
+.color-1{
+    margin-right: 10px;
+    background: red;
+}
+.color-2{
+    background-color: green;
+    margin-right: 14px;
+}
+.color-3{
+    background-color: pink;
+    margin-right: 20px;
+}
+.color-4{
+    background-color:blue;
+}
+.color input{
+    display: none;
+}
+.color input:checked +span{
+    transform:  scale(0.7);
+    box-shadow: 0 0 0 4px #fff ,0 0 0 6px #000;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.quantity p{
+    width: 70px;
+}
+.quantity input{
+    background: #eee;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    border-radius: 12px;
+}
+form button{
+    background: #553ff0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 40px;
+    box-shadow: 0 10px 10px rgba(85,63,240,0.25);
+    cursor: pointer;
+}
+.controlls{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+.btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(68, 198, 12, 0.7);
+    margin: 10px;
+    cursor: pointer;;
+}
